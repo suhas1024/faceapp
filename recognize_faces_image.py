@@ -1,6 +1,7 @@
 # USAGE
 # python recognize_faces_image.py --encodings encodings.pickle --image examples/example_01.png 
-
+%matplotlib inline
+from matplotlib import pyplot as plt
 # import the necessary packages
 import face_recognition
 import argparse
@@ -75,5 +76,8 @@ for ((top, right, bottom, left), name) in zip(boxes, names):
 		0.75, (0, 255, 0), 2)
 
 # show the output image
-cv2.imshow("Image", image)
-cv2.waitKey(0)
+#cv2.imshow("Image", image)
+#cv2.waitKey(0)
+
+plt.imshow(image)
+plt.show()
