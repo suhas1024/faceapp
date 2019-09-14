@@ -1,6 +1,7 @@
 # USAGE
 # python recognize_faces_image.py --encodings encodings.pickle --image examples/example_01.png 
 %matplotlib inline
+%config InlineBackend.figure_format = 'retina'
 #from matplotlib import pyplot as plt
 import matplotlib.pyplot as plt
 # import the necessary packages
