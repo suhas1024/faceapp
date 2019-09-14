@@ -1,7 +1,8 @@
 # USAGE
 # python recognize_faces_image.py --encodings encodings.pickle --image examples/example_01.png 
 %matplotlib inline
-from matplotlib import pyplot as plt
+#from matplotlib import pyplot as plt
+import matplotlib.pyplot as plt
 # import the necessary packages
 import face_recognition
 import argparse
