@@ -3,7 +3,8 @@
 #%matplotlib inline
 #%config InlineBackend.figure_format = 'retina'
 
-
+#Added first
+from Ipython.display import Image
 #import helper
 #from matplotlib import pyplot as plt
 import matplotlib.pyplot as plt
@@ -84,5 +85,7 @@ for ((top, right, bottom, left), name) in zip(boxes, names):
 #cv2.imshow("Image", image)
 #cv2.waitKey(0)
 
-plt.imshow(image)
-plt.show()
+Image(image)
+
+#plt.imshow(image)
+#plt.show()
