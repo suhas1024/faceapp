@@ -4,7 +4,7 @@
 #%config InlineBackend.figure_format = 'retina'
 
 #Added first
-#from Ipython.display import Image
+from Ipython.display import Image
 from google.colab.patches import cv2_imshow
 #import helper
 #from matplotlib import pyplot as plt
@@ -83,10 +83,10 @@ for ((top, right, bottom, left), name) in zip(boxes, names):
 		0.75, (0, 255, 0), 2)
 
 # show the output image
-cv2.imshow("Image", image)
-cv2.waitKey(0)
+#cv2.imshow("Image", image)
+#cv2.waitKey(0)
 
-#Image(image)
+Image(image)
 
 #plt.imshow(image)
 #plt.show()
