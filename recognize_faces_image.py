@@ -4,7 +4,7 @@
 #%config InlineBackend.figure_format = 'retina'
 
 #Added first
-from Ipython.display import Image
+from IPython.display import Image
 from google.colab.patches import cv2_imshow
 #import helper
 #from matplotlib import pyplot as plt
