@@ -9,6 +9,8 @@
 #import helper
 from matplotlib import pyplot as plt
 #import matplotlib.pyplot as plt
+import matplotlib.image as mpimg
+from matplotlib.pyplot import imshow
 # import the necessary packages
 import face_recognition
 import argparse
@@ -30,7 +32,8 @@ print("[INFO] loading encodings...")
 data = pickle.loads(open(args["encodings"], "rb").read())
 
 # load the input image and convert it from BGR to RGB
-image = cv2.imread(args["image"])
+#image = cv2.imread(args["image"])
+image = mpimg.imread(args["image"])
 rgb = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
 
 print(rgb)
@@ -90,9 +93,11 @@ for ((top, right, bottom, left), name) in zip(boxes, names):
 
 #Image(image)
 
-plt.imshow(image)
+#plt.imshow(image)
 #print(image)
-image.show()
+#image.show()
 print(image)
 #cv2.imshow("Image",image)
 #cv2.waitKey(0)
+figure()
+imshow(image)
