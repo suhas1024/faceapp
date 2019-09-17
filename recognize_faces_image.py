@@ -93,5 +93,6 @@ for ((top, right, bottom, left), name) in zip(boxes, names):
 plt.imshow(image)
 #print(image)
 plt.show(image)
+print(image)
 #cv2.imshow("Image",image)
 #cv2.waitKey(0)
