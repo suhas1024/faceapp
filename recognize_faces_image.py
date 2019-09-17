@@ -1,6 +1,6 @@
 # USAGE
 # python recognize_faces_image.py --encodings encodings.pickle --image examples/example_01.png 
-#%matplotlib inline
+%matplotlib inline
 #%config InlineBackend.figure_format = 'retina'
 
 #Added first
@@ -32,6 +32,8 @@ data = pickle.loads(open(args["encodings"], "rb").read())
 # load the input image and convert it from BGR to RGB
 image = cv2.imread(args["image"])
 rgb = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
+
+print(rgb)
 
 # detect the (x, y)-coordinates of the bounding boxes corresponding
 # to each face in the input image, then compute the facial embeddings
@@ -89,6 +91,7 @@ for ((top, right, bottom, left), name) in zip(boxes, names):
 #Image(image)
 
 plt.imshow(image)
+print(image)
 plt.show()
 #cv2.imshow("Image",image)
 #cv2.waitKey(0)
