@@ -5,9 +5,9 @@
 
 #Added first
 #from IPython.display import Image
-from google.colab.patches import cv2_imshow
+#from google.colab.patches import cv2_imshow
 #import helper
-#from matplotlib import pyplot as plt
+from matplotlib import pyplot as plt
 #import matplotlib.pyplot as plt
 # import the necessary packages
 import face_recognition
@@ -88,7 +88,7 @@ for ((top, right, bottom, left), name) in zip(boxes, names):
 
 #Image(image)
 
-#plt.imshow(image)
-#plt.show()
-cv2.imshow("Image",image)
-cv2.waitKey(0)
+plt.imshow(image)
+plt.show()
+#cv2.imshow("Image",image)
+#cv2.waitKey(0)
