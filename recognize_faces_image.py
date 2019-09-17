@@ -33,7 +33,7 @@ data = pickle.loads(open(args["encodings"], "rb").read())
 image = cv2.imread(args["image"])
 rgb = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
 
-print(rgb)
+#print(rgb)
 
 # detect the (x, y)-coordinates of the bounding boxes corresponding
 # to each face in the input image, then compute the facial embeddings
@@ -91,7 +91,7 @@ for ((top, right, bottom, left), name) in zip(boxes, names):
 #Image(image)
 
 plt.imshow(image)
-print(image)
+#print(image)
 plt.show()
 #cv2.imshow("Image",image)
 #cv2.waitKey(0)
