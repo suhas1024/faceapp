@@ -99,5 +99,5 @@ for ((top, right, bottom, left), name) in zip(boxes, names):
 print(image)
 #cv2.imshow("Image",image)
 #cv2.waitKey(0)
-figure()
+#figure()
 imshow(image)
